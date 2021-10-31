@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rVhNF3XrxU3GMpgqJQQIf/VfWWp4GlfpiRxsuLw0Np2sYxx21DyeGmN/paJWfViwsn9+CBrtgSm4lTTbKcz+cA==",
+  "success": true,
+  "projectFilePath": "/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/assignment.csproj",
+  "expectedPackageFiles": [
+    "/home/lukisko/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,77 @@
+@page "/List"
+@using Model
+@using assignment.Data
+@inject IAdultData AdultData 
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<h1>Adults</h1>
+<p>filter user by name: <input type="text" @oninput=@((arg)=> FilterByFirstName(arg))></p>
+@if (adults == null){
+    <p>loading</p>
+} else if (!adults.Any()){
+    <p>No adults in system.</p>
+} else {
+    <table class="table">
+        <thead>
+            <th>Id:</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Age:</th>
+            <th>Weight:</th>
+            <th>Sex:</th>
+            <th>Job title</th>
+            <th>Salary:</th>
+        </thead>
+        <tbody>
+            @foreach (var item in adults)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Age</td>
+                    <td>@item.Weight</td>
+                    <td>@item.Sex</td>
+                    <td>@item.JobTitle.JobTitle</td>
+                    <td>@item.JobTitle.Salary</td>
+                    <AuthorizeView Policy="SecurityLevel4">
+                        <td>
+                            <button @onclick=@(() => RemoveAdult(item.Id))>
+                                <i class="oi oi-trash"/>
+                            </button>
+                        </td>
+                    </AuthorizeView>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    //nothing
+    private IList<Adult> adults;
+    protected override async Task OnInitializedAsync()
+    {
+        adults = await AdultData.GetAdults();
+    }
+
+    private async void RemoveAdult(int adultID){
+        Adult toRemove = adults.First(adult => adult.Id == adultID);
+        await AdultData.RemoveAdult(toRemove.Id);
+        adults.Remove(toRemove);
+    }
+
+    private async void FilterByFirstName(ChangeEventArgs EventFirstName){
+        string searchName = EventFirstName.Value.ToString();
+        
+        if (searchName == ""){
+            adults = await AdultData.GetAdults();
+        } else {
+            var tempawait = await AdultData.GetAdults();
+            adults = tempawait.Where((adul) => {
+                string fullName = adul.FirstName + " " + adul.LastName;
+                return fullName.Contains(searchName);
+            }).ToList();
+        }
+    }
+}
