@@ -1,4 +1,5 @@
 using WebAPI.Model;
+using Entities.Model;
 
 namespace WebAPI.Data
 {

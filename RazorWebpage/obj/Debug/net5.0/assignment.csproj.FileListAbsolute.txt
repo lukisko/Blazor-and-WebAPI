@@ -129,3 +129,5 @@
 /run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/obj/Debug/net5.0/assignment.pdb
 /run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/obj/Debug/net5.0/assignment.genruntimeconfig.cache
 /run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/obj/Debug/net5.0/assignment.csproj.CopyComplete
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/bin/Debug/net5.0/Entities.dll
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/bin/Debug/net5.0/Entities.pdb

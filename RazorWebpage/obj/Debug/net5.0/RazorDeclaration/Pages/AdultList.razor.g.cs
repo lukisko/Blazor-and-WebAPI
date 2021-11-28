@@ -105,18 +105,27 @@ using assignment.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 50 "/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/Pages/AdultList.razor"
+#line 51 "/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/RazorWebpage/Pages/AdultList.razor"
       
     //nothing
     private IList<Adult> adults;
+
+    private string errorMessage;
     protected override async Task OnInitializedAsync()
     {
-        adults = await AdultData.GetAdults();
+        var tmpAdults = await AdultData.GetAdults();
+        Console.WriteLine(tmpAdults.ToString());
+        adults = tmpAdults;
     }
 
     private async void RemoveAdult(int adultID){
         Adult toRemove = adults.First(adult => adult.Id == adultID);
-        await AdultData.RemoveAdult(toRemove.Id);
+        try {
+            await AdultData.RemoveAdult(toRemove.Id);
+        } catch (Exception e){
+            errorMessage = e.Message;
+        }
+        
         adults.Remove(toRemove);
     }
 

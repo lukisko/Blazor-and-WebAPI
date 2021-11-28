@@ -5,6 +5,7 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
 <h1>Adults</h1>
+<div style="color:red">@errorMessage</div>
 <p>filter user by name: <input type="text" @oninput=@((arg)=> FilterByFirstName(arg))></p>
 @if (adults == null){
     <p>loading</p>
@@ -50,14 +51,23 @@
 @code{
     //nothing
     private IList<Adult> adults;
+
+    private string errorMessage;
     protected override async Task OnInitializedAsync()
     {
-        adults = await AdultData.GetAdults();
+        var tmpAdults = await AdultData.GetAdults();
+        Console.WriteLine(tmpAdults.ToString());
+        adults = tmpAdults;
     }
 
     private async void RemoveAdult(int adultID){
         Adult toRemove = adults.First(adult => adult.Id == adultID);
-        await AdultData.RemoveAdult(toRemove.Id);
+        try {
+            await AdultData.RemoveAdult(toRemove.Id);
+        } catch (Exception e){
+            errorMessage = e.Message;
+        }
+        
         adults.Remove(toRemove);
     }
 

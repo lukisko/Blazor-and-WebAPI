@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using WebAPI.Model;
 using System.Linq;
+using Entities.Model;
 
 namespace WebAPI.Data
 {

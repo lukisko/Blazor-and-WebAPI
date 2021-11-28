@@ -25,6 +25,7 @@ namespace assignment.Data
             //List<Adult> tmp = new List<Adult>(file.Adults);
             HttpResponseMessage response = await client.GetAsync(webApiUrl);
             string body = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(body);
             IList<Adult> result = JsonSerializer.Deserialize<IList<Adult>>(body);
             //Console.WriteLine("capacity of adult list: "+result.Count);
             //Console.WriteLine("First adult: "+result.ElementAt(1).Id);

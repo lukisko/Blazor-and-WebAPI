@@ -12,39 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -107626224,
-        "Kind": "Components.Component",
-        "Name": "assignment.Pages.AddAdult",
-        "AssemblyName": "assignment",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddAdult"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "assignment.Pages.AddAdult"
-        }
-      },
-      {
-        "HashCode": 896099732,
-        "Kind": "Components.Component",
-        "Name": "assignment.Pages.AddAdult",
-        "AssemblyName": "assignment",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "assignment.Pages.AddAdult"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "assignment.Pages.AddAdult",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 102702256,
         "Kind": "Components.Component",
         "Name": "assignment.Pages.AdultList",
@@ -74,6 +41,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "assignment.Pages.AdultList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -107626224,
+        "Kind": "Components.Component",
+        "Name": "assignment.Pages.AddAdult",
+        "AssemblyName": "assignment",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddAdult"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "assignment.Pages.AddAdult"
+        }
+      },
+      {
+        "HashCode": 896099732,
+        "Kind": "Components.Component",
+        "Name": "assignment.Pages.AddAdult",
+        "AssemblyName": "assignment",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "assignment.Pages.AddAdult"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "assignment.Pages.AddAdult",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using WebAPI.Model;
 using System.Text.Json;
 using WebAPI.Data;
+using Entities.Model;
 
 namespace WebAPI.Controllers
 {
@@ -14,15 +15,15 @@ namespace WebAPI.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private IUserService UserService;
-        public UserController(IUserService userService){
+        private Entities.Model.IUserService UserService;
+        public UserController(Entities.Model.IUserService userService){
             this.UserService = userService;
         }
 
         [HttpGet]
-        public ActionResult<User> validateUser([FromQuery] string username, [FromQuery] string password){
+        public async Task<ActionResult<User>> validateUser([FromQuery] string username, [FromQuery] string password){
             try {
-                User usr = UserService.ValidateUser(username,password);
+                User usr = await UserService.ValidateUser(username,password);
                 string jsonUser = JsonSerializer.Serialize(usr);
                 return StatusCode(200,jsonUser);
             } catch (Exception e){
