@@ -1,0 +1,12 @@
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.AssemblyInfoInputs.cache
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.AssemblyInfo.cs
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.csproj.CoreCompileInputs.cache
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.csprojAssemblyReference.cache
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/bin/Debug/net5.0/Entities.deps.json
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/bin/Debug/net5.0/Entities.dll
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/bin/Debug/net5.0/ref/Entities.dll
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/bin/Debug/net5.0/Entities.pdb
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.dll
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/ref/Entities.dll
+/run/media/lukisko/Windows-SSD/VIA/SEMESTER3/DNP1/assignment2/Entities/obj/Debug/net5.0/Entities.pdb
